@@ -1,0 +1,139 @@
+body {
+  background-color: rgb(132, 199, 243);
+}
+
+h1 {
+  color:blueviolet;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 20px;
+  margin-right:60px;
+  background-color:rgb(255, 194, 170);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1em;
+  margin-top:20px;
+  text-decoration: underline;
+  color:darkblue;
+}
+
+h3{
+  text-align: center;
+  font-size: 1em;
+}
+
+h4{
+  color:rgb(107, 42, 168);
+  text-align: center;
+  font-size: 2em;
+}
+
+h5{
+  margin-top:20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h6{
+  color:darkblue;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  align-content: center;
+}
+
+.cloudline {
+  height: 50px;
+  background-image: url(smallcloud.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+#sidebar {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.2em;
+  color:darkblue;
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  position:fixed;
+  height:100%;
+  overflow: auto;
+}
+
+ul {
+  list-style-type: none;
+  background-color: #7c6ef5;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+li a {
+  display: block;
+  color: rgb(3, 1, 121);
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: rgb(77, 2, 54);
+  color: rgb(142, 219, 255);
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(157, 141, 252);
+  color: rgb(110, 1, 96);
+}
+
+#main {
+  border: 1px solid #555;
+  background-color: rgb(179, 248, 248);
+  margin-bottom: 5px;
+}
+
+#titlebox {
+  text-align: left;
+  font-size: 1.5em;
+  margin-top:5px;
+  margin-left:5px;
+}
+
+.user {
+  margin:8px;
+  margin-top:15px;
+  border: 1px solid #555;
+}
+
+.login {
+  border: 1px solid #555;
+  margin-top:8px;
+  padding-left: 5px;
+}
+
+#cont_r {
+  border: 1px solid #555;
+  padding:5px;
+  padding-left:30px;
+  background-color: rgb(179, 248, 248);
+}
+
+#cont_b {
+  margin-top:3px;
+  border: 1px solid #555;
+  padding:5px;
+  padding-left:30px;
+  background-color: rgb(179, 248, 248);
+}

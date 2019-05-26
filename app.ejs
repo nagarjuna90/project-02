@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>vm creation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style>
+        body {
+          background-color: grey;
+          text-align: center;
+      
+        }
+      </style>
+</head>
+<body>
+
+                 <div class="container">
+                    <h2>Create/Delete App</h2>
+                    
+                    <button id="openButton">Create</button>
+                    <form id="createForm" action="/app" method="POST" enctype="application/json">  
+                    </form>
+                    <button id="closeButton">Delete</button>
+                    <form id="deleteForm">
+                        
+                    </form>
+                    <script>
+                      const openButton=document.querySelector('#openButton');
+                      const closeButton=document.querySelector('#closeButton');
+                      const createForm=document.querySelector('#createForm');
+                      const deleteForm=document.querySelector('#deleteForm')
+                  
+                      //Opens
+                        openButton.addEventListener('click', function() {
+                        createForm.innerHTML = `
+                            <label>Resource Group</label>
+                            <input name="groupName" type="text" value=<%= user.nickname %> >
+                            <label>App Name</label>
+                            <input name="appName"/>
+                            <label>Plan Name</label>
+                            <input name="planName"/>
+                            <button>Submit</button>
+                        `
+                      })
+                  
+                      closeButton.addEventListener('click', function() {
+                        deleteForm.innerHTML = `
+                            <label>App Name</label>
+                            <input />
+                            <button>Submit</button>
+                        `
+                      })
+                  
+                    </script>
+                         
+                  </div>
+                                  
+                  
+</body>
+</html> 
+

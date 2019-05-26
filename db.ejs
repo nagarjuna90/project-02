@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>vm creation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style>
+        body {
+          background-color: grey;
+          text-align: center;
+      
+        }
+      </style>
+  
+</head>
+<body>
+
+
+      </div>
+      <div class="container">
+            <h2>Create/Delete DB</h2>
+            
+            <button id="openButton">Create</button>
+            <form id="createForm" action="/db" method="POST" enctype="application/json"> 
+                
+            </form>
+            <button id="closeButton">Delete</button>
+            <form id="deleteForm">
+                
+            </form>
+            <script>
+              const openButton=document.querySelector('#openButton');
+              const closeButton=document.querySelector('#closeButton');
+              const createForm=document.querySelector('#createForm');
+              const deleteForm=document.querySelector('#deleteForm')
+          
+              //Opens
+              openButton.addEventListener('click', function() {
+                        createForm.innerHTML = `
+                            <label>Resource Group</label>
+                            <input name="groupName" type="text" value=<%= user.nickname %> >
+                            <label>Server Name</label>
+                            <input name="myServer"/>
+                            <label>DB Name</label>
+                            <input name="mydb"/>
+                            <button>Submit</button>
+                        `
+                      })
+                  
+                      closeButton.addEventListener('click', function() {
+                        deleteForm.innerHTML = `
+                            <label>DB Name</label>
+                            <input />
+                            <button>Submit</button>
+                        `
+                      })
+          
+            </script>
+                 
+          </div>
+           
+</body>
+</html> 
+
